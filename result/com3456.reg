@@ -1,0 +1,92 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\Enum\Root\Ports]
+
+
+[HKEY_LOCAL_MACHINE\Enum\Root\Ports\0002]
+"Class"="Ports"
+"Driver"="Ports\\0002"
+"Mfg"="minlux"
+"HardwareID"="*PNP0500"
+"DeviceDesc"="minlux Virtual COM-Port (COM3)"
+"ConfigFlags"=hex:00,00,00,00
+"PortName"="COM3"
+"FriendlyName"="minlux Virtual COM-Port (COM3)"
+"PairPortName"="COM4"
+
+
+[HKEY_LOCAL_MACHINE\Enum\Root\Ports\0003]
+"Class"="Ports"
+"Driver"="Ports\\0003"
+"Mfg"="minlux"
+"HardwareID"="*PNP0500"
+"DeviceDesc"="minlux Virtual COM-Port (COM4)"
+"ConfigFlags"=hex:00,00,00,00
+"PortName"="COM4"
+"FriendlyName"="minlux Virtual COM-Port (COM4)"
+"PairPortName"="COM3"
+
+
+[HKEY_LOCAL_MACHINE\Enum\Root\Ports\0004]
+"Class"="Ports"
+"Driver"="Ports\\0004"
+"Mfg"="minlux"
+"HardwareID"="*PNP0500"
+"DeviceDesc"="minlux Virtual COM-Port (COM5)"
+"ConfigFlags"=hex:00,00,00,00
+"PortName"="COM5"
+"FriendlyName"="minlux Virtual COM-Port (COM5)"
+"PairPortName"="COM6"
+
+
+[HKEY_LOCAL_MACHINE\Enum\Root\Ports\0005]
+"Class"="Ports"
+"Driver"="Ports\\0005"
+"Mfg"="minlux"
+"HardwareID"="*PNP0500"
+"DeviceDesc"="minlux Virtual COM-Port (COM6)"
+"ConfigFlags"=hex:00,00,00,00
+"PortName"="COM6"
+"FriendlyName"="minlux Virtual COM-Port (COM6)"
+"PairPortName"="COM5"
+
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Ports\0002]
+"DevLoader"="*vcomm"
+"PortDriver"="mxvcp.vxd"
+"PortSubClass"=hex:01
+"InfPath"="MXVCP.INF"
+"InfSection"="MINLUX_VCP"
+"DriverDate"="12-13-2018"
+"DriverDesc"="minlux Virtual COM-Port"
+
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Ports\0003]
+"DevLoader"="*vcomm"
+"PortDriver"="mxvcp.vxd"
+"PortSubClass"=hex:01
+"InfPath"="MXVCP.INF"
+"InfSection"="MINLUX_VCP"
+"DriverDate"="12-13-2018"
+"DriverDesc"="minlux Virtual COM-Port"
+
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Ports\0004]
+"DevLoader"="*vcomm"
+"PortDriver"="mxvcp.vxd"
+"PortSubClass"=hex:01
+"InfPath"="MXVCP.INF"
+"InfSection"="MINLUX_VCP"
+"DriverDate"="12-13-2018"
+"DriverDesc"="minlux Virtual COM-Port"
+
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Class\Ports\0005]
+"DevLoader"="*vcomm"
+"PortDriver"="mxvcp.vxd"
+"PortSubClass"=hex:01
+"InfPath"="MXVCP.INF"
+"InfSection"="MINLUX_VCP"
+"DriverDate"="12-13-2018"
+"DriverDesc"="minlux Virtual COM-Port"
+

@@ -1,0 +1,8 @@
+Linker
+Because of copyright not included here.
+Search the internet for Windows 95, DDK. I think it is included there!
+
+Probably required dependencies:
+- link.err
+- dbi.dll
+- imagehelp.dll

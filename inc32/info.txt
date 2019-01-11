@@ -1,0 +1,2 @@
+Because of copyright not included here.
+Replace this folder with the "inc32" from the ddk.

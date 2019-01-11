@@ -1,0 +1,50 @@
+[version]
+signature="$WINDOWS 95$"
+Class=Ports
+Provider=%MX%
+
+
+[DestinationDirs]
+DefaultDestDir = 11        ;LDID_SYS
+
+
+[Manufacturer]
+%MX%=MINLUX
+
+
+; Produkte/Geraete (Devices) der Firma minlux
+[MINLUX]
+;Diese Geraete werden dann in der Registry unter HKEY_LOCAL_MACHINE\Enum\Root\Ports\xxxx eingetragen (x=0000 .. 9999)
+%MINLUX\VCP.DeviceDesc%=MINLUX_VCP, *PNP0500
+
+
+; Installationsanweisung, fuer minlux's Virtual COM-Ports
+[MINLUX_VCP]
+CopyFiles=MINLUX_VCP.Copy
+AddReg=MINLUX_VCP.AddReg
+
+
+; Datei-Kopier-Anweisung(en), fuer minlux's Virtual COM-Ports
+[MINLUX_VCP.Copy]
+mxvcp.vxd
+
+
+; Add-Entries-To-SOFTWARE-Brance-Of-Registry-Anweisung(en), fuer minlux's Virtual COM-Ports
+[MINLUX_VCP.AddReg]
+;Der relative Schluessel HKR sollte hier zu HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Ports\yyyy (y=0000 .. 9999) expandieren
+HKR,,DevLoader,,*vcomm
+HKR,,PortDriver,,mxvcp.vxd
+HKR,,PortSubClass,1,01
+
+
+[Strings]
+MX="minlux"
+MINLUX\VCP.DeviceDesc="minlux Virtual COM-Port"
+
+
+[SourceDisksNames]
+1="minlux VCP Driver Disk",,
+
+
+[SourceDisksFiles]
+mxvcp.vxd=1
